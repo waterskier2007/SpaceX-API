@@ -1,0 +1,19 @@
+{
+  "name": "SpaceX-API-Review",
+  "scripts": {
+  },
+  "env": {
+    "LANG": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
