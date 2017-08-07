@@ -7,7 +7,7 @@
 # SpaceX Data REST API
 
 [![Travis](https://img.shields.io/travis/r-spacex/SpaceX-API.svg?style=flat-square)](https://travis-ci.org/r-spacex/SpaceX-API)
-[![codecov](https://codecov.io/gh/r-spacex/SpaceX-API/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/r-spacex/SpaceX-API)
+[![Codecov](https://img.shields.io/codecov/c/github/r-spacex/SpaceX-API.svg?style=flat-square)](https://codecov.io/gh/r-spacex/SpaceX-API)
 [![Docker Build Statu](https://img.shields.io/docker/build/jakewmeyer/spacex-api.svg?style=flat-square)](https://hub.docker.com/r/jakewmeyer/spacex-api/)
 [![GitHub release](https://img.shields.io/github/release/r-spacex/SpaceX-API.svg?style=flat-square)]()
 [![Interface](https://img.shields.io/badge/interface-REST-brightgreen.svg?style=flat-square)]()
@@ -37,10 +37,10 @@ GET https://api.spacexdata.com/v1/launches/latest
     "rocket": {
       "rocket_id": "falcon9",
       "rocket_name": "Falcon 9",
-      "rocket_type": "FT",
-      "core_serial": "B1037",
-      "cap_serial": null
+      "rocket_type": "FT"
     },
+    "core_serial": "B1037",
+    "cap_serial": null,
     "telemetry": {
       "flight_club": null
     },
@@ -92,6 +92,9 @@ See the [Contribution](https://github.com/r-spacex/SpaceX-API/blob/master/CONTRI
 ```bash
 docker pull jakewmeyer/spacex-api
 ```
+* Deploy on your own Heroku app below:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## FAQ's
 * If you have any questions or corrections, please open an issue and we'll get it merged ASAP
